@@ -109,7 +109,7 @@ Converts untrusted input a safe HTML Element Content as stated in Rule #1
 Converts untrusted input into a safe HTML Common Attribute as stated in Rule #2
 
 
-`javascriptDataValues($sJsValue)`
+`javascriptDataValue($sJsValue)`
 
 Converts untrusted input into a save javascript data value. Make sure to quote the output first as stated in Rule #3. 
 
