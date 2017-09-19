@@ -14,11 +14,11 @@ From Rule #0 to Rule #5.
     
     1.4 [Rule #3 - JavaScript Escape Before Inserting Untrusted Data into JavaScript Data Values](#rule-3---javascript-escape-before-inserting-untrusted-data-into-javascript-data-values)
         
-        1.4.1 [BEWARE THAT](#beware-that-1)
+       1.4.1 [BEWARE THAT](#beware-that-1)
     
     1.5 [Rule #4 - CSS Escape And Strictly Validate Before Inserting Untrusted Data into HTML Style Property Values](#rule-4---css-escape-and-strictly-validate-before-inserting-untrusted-data-into-html-style-property-values)
     
-        1.5.1 [BEWARE THAT](#beware-that-2)
+       1.5.1 [BEWARE THAT](#beware-that-2)
     
     1.6 [Rule #5 - URL Escape Before Inserting Untrusted Data into HTML URL Parameter Values](#rule-5---url-escape-before-inserting-untrusted-data-into-html-url-parameter-values)
 
