@@ -5,12 +5,27 @@ From Rule #0 to Rule #5.
 
 # Table of Contents
  1. [Before Using This Library](#before-using-this-library)
-    1.1 [Rule #0 - Never Insert Untrusted Data Except in Allowed Locations](#rule0--never-insert-untrusted-data-except-in-allowed-locations)
-    1.2 [Rule #1 - HTML Escape Before Inserting Untrusted Data into HTML Element Content]()
-    1.3 []()
-    1.4 []()
-    1.5 []()
-    1.6 []()
+ 
+    1.1 [Rule #0 - Never Insert Untrusted Data Except in Allowed Locations](#rule-0---never-insert-untrusted-data-except-in-allowed-locations)
+    
+    1.2 [Rule #1 - HTML Escape Before Inserting Untrusted Data into HTML Element Content](#rule-1---html-escape-before-inserting-untrusted-data-into-html-element-content)
+    
+    1.3 [Rule #2 - Attribute Escape Before Inserting Untrusted Data into HTML Common Attributes](#rule-2---attribute-escape-before-inserting-untrusted-data-into-html-common-attributes)
+    
+    1.4 [Rule #3 - JavaScript Escape Before Inserting Untrusted Data into JavaScript Data Values](#rule-3---javascript-escape-before-inserting-untrusted-data-into-javascript-data-values)
+        
+        1.4.1 [BEWARE THAT](#beware-that-1)
+    
+    1.5 [Rule #4 - CSS Escape And Strictly Validate Before Inserting Untrusted Data into HTML Style Property Values](#rule-4---css-escape-and-strictly-validate-before-inserting-untrusted-data-into-html-style-property-values)
+    
+        1.5.1 [BEWARE THAT](#beware-that-2)
+    
+    1.6 [Rule #5 - URL Escape Before Inserting Untrusted Data into HTML URL Parameter Values](#rule-5---url-escape-before-inserting-untrusted-data-into-html-url-parameter-values)
+
+ 2. [Functions](#functions)
+ 
+ 3. [How to use?](#how-to-use)
+    
 
 # Before Using This Library:
 Be sure to follow Rule #0 to Rule #5.
