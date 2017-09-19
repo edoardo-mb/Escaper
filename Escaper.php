@@ -130,7 +130,7 @@ class Escaper
          *   I will add an additional space to solve the CSS Escaping Problem.
          *
          */
-        $aEncoded = array_filter(explode('-', chunk_split(bin2hex($sJsValue), 2, '-')));
+        $aEncoded = array_filter(explode('-', chunk_split(bin2hex($sCssValue), 2, '-')));
         return implode(array_map(function($sHex) {
             $sPattern   = '\\%s ';
             $sWhiteList = 'a-z0-9';
@@ -154,7 +154,7 @@ class Escaper
          * Except for alphanumeric characters, escape all characters
          * with ASCII values less than 256 with the %HH escaping format.
          */
-        $aEncoded = array_filter(explode('-', chunk_split(bin2hex($sJsValue), 2, '-')));
+        $aEncoded = array_filter(explode('-', chunk_split(bin2hex($sParameterValue), 2, '-')));
         return implode(array_map(function($sHex) {
             $sPattern   = '\%%s ';
             $sWhiteList = 'a-z0-9';
