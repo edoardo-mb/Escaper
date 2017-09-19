@@ -34,6 +34,8 @@ class Escaper
     /**
      * Converts untrusted input a safe HTML Element Content as
      * stated in XSS Prevention Cheat Sheet - Rule #1
+     * @param string $sContent
+     * @return Returns safe HTML Element Content
      */
     public function htmlElementContent($sContent)
     {
@@ -53,6 +55,8 @@ class Escaper
     /**
      * Converts untrusted input into a safe HTML Common Attribute
      * as stated in XSS Prevention Cheat Sheet - Rule #2
+     * @param string $sAttributeValue
+     * @return Returns safe HTML Common Attribute
      */
     public function htmlCommonAttribute($sAttributeValue)
     {
@@ -75,8 +79,10 @@ class Escaper
     }
     
     /**
-     * Converts untrusted input into a save javascript data value.
+     * Converts untrusted input into a safe javascript data value.
      * Make sure to quote the output first as stated in XSS Prevention Cheat Sheet - Rule #3.
+     * @param string $sJsValue
+     * @return Returns safe javascript data value
      */
     public function javascriptDataValues($sJsValue)
     {
@@ -101,6 +107,8 @@ class Escaper
     /**
      * Converts untrusted input into a safe CSS property value as
      * stated in XSS Prevention Cheat Sheet - Rule #4.
+     * @param string $sCssValue
+     * @return Returns safe CSS property value
      */
     public function cssValue($sCssValue)
     {
@@ -120,6 +128,7 @@ class Escaper
          * Developer Note:
          *   I will implement \XX scheme, therefore, in every escaped characters,
          *   I will add an additional space to solve the CSS Escaping Problem.
+         *
          */
         $aEncoded = array_filter(explode('-', chunk_split(bin2hex($sJsValue), 2, '-')));
         return implode(array_map(function($sHex) {
@@ -135,6 +144,8 @@ class Escaper
     /**
      * Converts untrusted input into a safe URL Parameter Value as
      * stated in XSS Prevention Cheat Sheet - Rule #5
+     * @param string $sParameterValue
+     * @return Returns safe URL Parameter Value
      */
     public function urlParameterValue($sParameterValue)
     {
