@@ -84,7 +84,7 @@ class Escaper
      * @param string $sJsValue
      * @return Returns safe javascript data value
      */
-    public function javascriptDataValues($sJsValue)
+    public function javascriptDataValue($sJsValue)
     {
         /**
          * OWASP SPECIFICATION:
