@@ -3,6 +3,15 @@ Context Escaper based on OWASP XSS Prevention, implemented in PHP. Please refer 
 https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
 From Rule #0 to Rule #5.
 
+# Table of Contents
+ 1. [Before Using This Library](#before-using-this-library)
+    1.1 [Rule #0 - Never Insert Untrusted Data Except in Allowed Locations](#rule0--never-insert-untrusted-data-except-in-allowed-locations)
+    1.2 [Rule #1 - HTML Escape Before Inserting Untrusted Data into HTML Element Content]()
+    1.3 []()
+    1.4 []()
+    1.5 []()
+    1.6 []()
+
 # Before Using This Library:
 Be sure to follow Rule #0 to Rule #5.
 
