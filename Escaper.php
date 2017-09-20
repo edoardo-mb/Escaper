@@ -26,7 +26,7 @@
  *
  * Class Escaper
  * @author  Gabriel Lucernas Pascual (ghabxph) <ghabxph@gmail.com>
- * @version 1.0
+ * @version 1.0.1
  * @since   2017.09.17
  */
 class Escaper
