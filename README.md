@@ -127,13 +127,10 @@ Converts untrusted input into a safe URL Parameter Value as stated in Rule #5
 ```php
 include_once 'Escaper.php';
 
-// Make instance
-$oEscaper = new Escaper();
-
 // Escape untrusted input based on context
-$oEscaper->htmlElementContent('... untrusted input here ...');
-$oEscaper->htmlCommonAttribute('... untrusted input here ...');
-$oEscaper->javascriptDataValue('... untrusted input here ...');
-$oEscaper->cssValue('... untrusted input here ...');
-$oEscaper->urlParameterValue(' ... untrusted input here ...');
+Escaper::htmlElementContent('... untrusted input here ...');
+Escaper::htmlCommonAttribute('... untrusted input here ...');
+Escaper::javascriptDataValue('... untrusted input here ...');
+Escaper::cssValue('... untrusted input here ...');
+Escaper::urlParameterValue(' ... untrusted input here ...');
 ```
