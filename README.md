@@ -16,7 +16,7 @@ From Rule #0 to Rule #5.
         
        1.4.1 [BEWARE THAT](#beware-that)
        
-       1.4.2 [RULE #3.1 - HTML escape JSON values in an HTML context and read the data with JSON.parse](#rule-3.1---html-escape-json-values-in-an-html-context-and-read-the-data-with-json-parse)
+       1.4.2 [RULE #3.1 - HTML escape JSON values in an HTML context and read the data with JSON.parse](#rule-31---html-escape-json-values-in-an-html-context-and-read-the-data-with-jsonparse)
     
     1.5 [Rule #4 - CSS Escape And Strictly Validate Before Inserting Untrusted Data into HTML Style Property Values](#rule-4---css-escape-and-strictly-validate-before-inserting-untrusted-data-into-html-style-property-values)
     
