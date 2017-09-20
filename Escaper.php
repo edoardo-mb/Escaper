@@ -37,7 +37,7 @@ class Escaper
      * @param string $sContent
      * @return Returns safe HTML Element Content
      */
-    public function htmlElementContent($sContent)
+    public static function htmlElementContent($sContent)
     {
         /**
          * OWASP Specification:
@@ -58,7 +58,7 @@ class Escaper
      * @param string $sAttributeValue
      * @return Returns safe HTML Common Attribute
      */
-    public function htmlCommonAttribute($sAttributeValue)
+    public static function htmlCommonAttribute($sAttributeValue)
     {
         /**
          * OWASP SPECIFICATION:
@@ -84,7 +84,7 @@ class Escaper
      * @param string $sJsValue
      * @return Returns safe javascript data value
      */
-    public function javascriptDataValue($sJsValue)
+    public static function javascriptDataValue($sJsValue)
     {
         /**
          * OWASP SPECIFICATION:
@@ -110,7 +110,7 @@ class Escaper
      * @param string $sCssValue
      * @return Returns safe CSS property value
      */
-    public function cssValue($sCssValue)
+    public static function cssValue($sCssValue)
     {
         /**
          * OWASP SPECIFICATION:
@@ -147,7 +147,7 @@ class Escaper
      * @param string $sParameterValue
      * @return Returns safe URL Parameter Value
      */
-    public function urlParameterValue($sParameterValue)
+    public static function urlParameterValue($sParameterValue)
     {
         /**
          * OWASP SPECIFICATION:
