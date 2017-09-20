@@ -129,7 +129,15 @@ Converts untrusted input into a safe URL Parameter Value as stated in Rule #5
 Recursively escapes all string that a php variable contain, and converts it into a json string that is XSS safe.
 
 # How to use?
-```php
+ 1. Download the files at (releases)[https://github.com/ghabxph/Escaper/releases] here in github.
+ 2. As of the moment, you need these files:
+    * Escaper.php
+    * VariableHtmlEscaper.php
+    Include the following folders mentioned somewhere in your project folder.
+ 3. Include Escaper.php
+ 
+ 
+ ```php
 include_once 'Escaper.php';
 
 // Escape untrusted input based on context
@@ -140,3 +148,6 @@ Escaper::cssValue('... untrusted input here ...');
 Escaper::urlParameterValue(' ... untrusted input here ...');
 Escaper::secureJsonEncode($mAnyValueHere);
 ```
+ 
+ # In the future
+ In the future, I shall make this a composer project, so that adding this work as a project dependency of yours would be more easier and portable.
