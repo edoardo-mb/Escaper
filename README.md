@@ -15,6 +15,8 @@ From Rule #0 to Rule #5.
     1.4 [Rule #3 - JavaScript Escape Before Inserting Untrusted Data into JavaScript Data Values](#rule-3---javascript-escape-before-inserting-untrusted-data-into-javascript-data-values)
         
        1.4.1 [BEWARE THAT](#beware-that)
+       
+       1.4.2 [RULE #3.1 - HTML escape JSON values in an HTML context and read the data with JSON.parse](#rule-3.1---html-escape-json-values-in-an-html-context-and-read-the-data-with-json-parse)
     
     1.5 [Rule #4 - CSS Escape And Strictly Validate Before Inserting Untrusted Data into HTML Style Property Values](#rule-4---css-escape-and-strictly-validate-before-inserting-untrusted-data-into-html-style-property-values)
     
@@ -75,6 +77,13 @@ No matter how you escape this, XSS will always be possible here. So, you must pu
  <script>
  window.setInterval('...EVEN IF YOU ESCAPE UNTRUSTED DATA YOU ARE XSSED HERE...');
  </script>
+```
+
+### RULE #3.1 - HTML escape JSON values in an HTML context and read the data with JSON.parse
+```javascript
+{
+   "escape" : "untrusted data before putting here..."
+}
 ```
 
 ## Rule #4 - CSS Escape And Strictly Validate Before Inserting Untrusted Data into HTML Style Property Values
