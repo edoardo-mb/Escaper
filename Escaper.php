@@ -156,12 +156,12 @@ class Escaper
          */
         $aEncoded = array_filter(explode('-', chunk_split(bin2hex($sParameterValue), 2, '-')));
         return implode(array_map(function($sHex) {
-            $sPattern   = '\%%s ';
+            $sPattern   = '%s';
             $sWhiteList = 'a-z0-9';
             $sChar      = hex2bin($sHex);
             $bIsMatch   = preg_match('/[' . $sWhiteList . ']/i', $sChar) === 1;
             
-            return ($bIsMatch === true) ? $sChar : sprintf($sPattern, $sHex);
+            return ($bIsMatch === true) ? $sChar : '%' . sprintf($sPattern, $sHex);
         }, $aEncoded));
     }
 }
