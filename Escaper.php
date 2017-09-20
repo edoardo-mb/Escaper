@@ -164,4 +164,18 @@ class Escaper
             return ($bIsMatch === true) ? $sChar : '%' . sprintf($sPattern, $sHex);
         }, $aEncoded));
     }
+
+    /**
+     * JSON Encodes the variable securely
+     * @param mixed   $mVariable
+     * @return string Returns string containing xss safe string that can be displayed
+     *                safely to the browser.
+     */
+    public static function secureJsonEncode($mVariable)
+    {
+        if (class_exists('VariableHtmlEscaper') === false)) {
+            include_once('VariableHtmlEscaper.php');
+        }
+        return json_encode(VariableHtmlEscaper::doEscape($mVariable));
+    }
 }
