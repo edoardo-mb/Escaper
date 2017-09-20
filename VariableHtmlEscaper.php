@@ -40,7 +40,7 @@ class VariableHtmlEscaper
         if (class_exists('Escaper') === false) {
             include_once('Escaper.php');
         }
-        $oInstance = new VariableEscaper();
+        $oInstance = new VariableHtmlEscaper();
         return $oInstance->escape($mVariable);
     }
     
