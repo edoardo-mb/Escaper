@@ -100,28 +100,33 @@ As for myself, I cannot reproduce this, but it must be possible that some browse
 ```
 
 # Functions
-`htmlElementContent($sContent)`
+`htmlElementContent($sContent)` (since v1.0)
 
 Converts untrusted input a safe HTML Element Content as stated in Rule #1
 
-`htmlCommonAttribute($sAttributeValue)`
+`htmlCommonAttribute($sAttributeValue)` (since v1.0)
 
 Converts untrusted input into a safe HTML Common Attribute as stated in Rule #2
 
 
-`javascriptDataValue($sJsValue)`
+`javascriptDataValue($sJsValue)` (since v1.0)
 
 Converts untrusted input into a save javascript data value. Make sure to quote the output first as stated in Rule #3. 
 
 
-`cssValue($sCssValue)`
+`cssValue($sCssValue)` (since v1.0)
 
 Converts untrusted input into a safe CSS property value as stated in Rule #4.
 
 
-`urlParameterValue($sParameterValue)`
+`urlParameterValue($sParameterValue)` (since v1.0)
 
 Converts untrusted input into a safe URL Parameter Value as stated in Rule #5
+
+
+`secureJsonEncode` (since v1.0.1)
+
+Recursively escapes all string that a php variable contain, and converts it into a json string that is XSS safe.
 
 # How to use?
 ```php
@@ -133,4 +138,5 @@ Escaper::htmlCommonAttribute('... untrusted input here ...');
 Escaper::javascriptDataValue('... untrusted input here ...');
 Escaper::cssValue('... untrusted input here ...');
 Escaper::urlParameterValue(' ... untrusted input here ...');
+Escaper::secureJsonEncode($mAnyValueHere);
 ```
